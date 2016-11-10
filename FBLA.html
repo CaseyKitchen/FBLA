@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<script>
+
+    var picker1 = Math.floor ((Math.random() * 100));
+    var picker2 = Math.floor ((Math.random() * 100));
+    function echo() {
+
+        alert("first number: " +picker1+ " and your second " +picker2);
+
+    }
+
+    //add
+function add() {
+var add = picker1+picker2;
+        alert("When Added:" + add);
+    }
+
+    //sub
+function sub() {
+var sub = picker1-picker2;
+    alert("When Subtraction" + sub);
+}
+
+    //multiplying
+function multi() {
+        alert("When multiplied: " + picker1*picker2);
+    }
+    //Division
+function Division() {
+    var Div = picker1/picker2;
+    alert("When Divided: " + Div);
+}
+    //Modulus
+function mod() {
+    var mod = picker1 % picker2;
+     alert("When Modulus:" + mod);
+}
+
+</script>
+   <!-- import math
+    from random import *
+    from decimal import *
+    getcontext().prec = 38
+    def addition(n1, n2):
+    return n1 + n2
+    def multiplication(n1, n2):
+    return n1 * n2
+    def subtraction(n1, n2):
+    return n1 - n2
+    def division(n1, n2):
+    return n1 / n2
+    def modulus(n1, n2):
+    return n1 % n2
+    #Generate two random numbers:
+    for count in range(1, 10):
+    #since random returns [0.0, 1.0), use ceil to prevent 0
+    num1 = Decimal(math.ceil(100 * random()))
+    num2 = Decimal(math.ceil(100 * random()))
+    #num1 = Decimal(100 * random())
+    #num2 = Decimal(100 * random())
+    sm = addition(num1, num2)
+    prod = multiplication(num1, num2)
+    dif = subtraction(num1, num2)
+    quotient = division(num1, num2)
+    mod = modulus(num1, num2)
+    print("Value A:\t" + str(num1))
+    print("Value B:\t" + str(num2))
+    print("The sum of the two numbers is: " + str(sm))
+    print("The product of the two numbers is: " + str(prod))
+    print("The different of the two numbers is: " + str(dif))
+    print("The quotient of the two numbers is: " + str(quotient))
+    print("The modulus of the two numbers is: " + str(mod))-->
+
+
+
+</head>
+<body>
+
+<style type="text/css">
+
+  form {
+          background: rgb(255, 255, 255);
+          padding:1em;
+          border:5px solid #000000;
+          margin:1em;
+          width:42em;
+          alignment: center;
+      }
+
+      html{
+          padding: 15em;
+
+      }
+
+</style>
+<!--html-->
+<table>
+<tr>
+<td>
+<button onclick="echo()" style="height: 25px; width: 100px;"> Click me</button>
+    <input type="text"
+           readonly>
+</td>
+</tr>
+
+<tr>
+<td>
+<button onclick="add()" style="height: 25px; width: 100px;">Addition</button>
+
+</td>
+</tr>
+
+<tr>
+<td>
+<button onclick="sub()" style="height: 25px; width: 100px;">Subtraction</button>
+
+</td>
+</tr>
+
+<tr>
+<td>
+<button onclick="multi()" style="height: 25px; width: 100px;">Multiplication</button>
+</td>
+</tr>
+
+<tr>
+<td>
+<button onclick="Division()" style="height: 25px; width: 100px;">Division</button>
+
+</td>
+</tr>
+
+<tr>
+<td>
+<button onclick="mod()" style="height: 25px; width: 100px;">Modulus</button>
+
+</td>
+</tr>
+</table>
+
+</body>
+</html>
